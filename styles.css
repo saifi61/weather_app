@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.title{
+    color: white;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: rgba(255, 255, 255, 0.2);
+}
+.weatherInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    gap: 5px;
+    width: 90%;
+}
+.cityInput{
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+
+}
+.getWeather{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff7900;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.getWeather:hover{
+    background-color: #d86602;
+}
+.weatherDetails{
+    color: white;
+    font-size: 2rem;
+}
+.cityName{
+    font-size: 3rem;
+    margin: 15px 0;
+}
+.description{
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px 0;
+}
+.temprature{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px 0;
+}
+@media screen and (min-width: 764px){
+    .container{
+        width: 60%;
+    }
+    .cityInput{
+        width: 80%;
+    }
+    .getWeather{
+        padding: 10px 15px;
+    }
+    .cityName{
+        font-size: 5rem;
+        margin: 25px 0;
+    }
+    .description{
+        font-size: 2.5rem;
+        margin: 20px 0;
+    }
+    .temprature{
+        font-size: 2rem;
+    }
+    
+}
